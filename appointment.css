@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #7A1F3D;
+    color: #D8A7B1;
+}
+
+/* HEADER */
+header {
+    background-color: #7A1F3D;
+    padding: 25px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 4px;
+        vertical-align: middle;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #6EB5FF;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+
+            nav ul li a:hover {
+                background-color: #D8A7B1;
+                color: #1D3C6A;
+            }
+/* APPOINTMENT SECTION */
+.appointment-section {
+    background: url("images/appointment.jpg") no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+.appointment-box {
+    max-width: 850px;
+    margin: auto;
+    background-color: rgba(122, 31, 61, 0.92);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+h1, h2 {
+    font-family: 'Cinzel', serif;
+    color: #6EB5FF;
+}
+h1{
+font-size: 45px;
+}
+h2{
+font-size: 32px;
+}
+
+
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+.radio-group {
+    margin: 10px 0;
+}
+
+    .radio-group input[type="radio"] {
+        display: inline-block;
+        vertical-align: middle; /* aligns the radio button with the text */
+        margin-right: 8px; /* space between button and text */
+    }
+
+    .radio-group label {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px; /* optional: space between each option */
+    }
+
+button {
+    background-color: #6EB5FF;
+    color: #7A1F3D;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #D8A7B1;
+    color: #7A1F3D;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ANIMATION BASE */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: all 1s ease;
+}
+
+.reveal.active,
+.reveal-left.active {
+    opacity: 1;
+    transform: translate(0);
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: 'Playfair Display', serif;
+}

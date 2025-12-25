@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petflix & Heal Veterinary Clinic</title>
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="appointment.html">APPOINTMENT</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- WELCOME SECTION -->
+    <section class="intro welcome">
+        <div class="introcontainer">
+            <div class="introtext">
+                <h1 class="fadeline">WELCOME TO</h1>
+                <h1 class="fadeline">PETFLIX AND HEAL</h1>
+                <h1 class="fadeline">VETERINARY CLINIC</h1>
+                <p class="slideup">
+                    We are a small-town neighbourhood clinic that offers all the advantages of modern veterinary technology. At Petflix & Heal, we know your pets aren’t just animals, they’re family. That is why we combine professional veterinary care with a touch of love, patience, and playfulness. Our treatment expertise ranges from animals as small as hamsters, to as large as draft horses.
+                    We take pride in delivering personalized, compassionate care to our patients in a comfortable veterinary facility that is locally owned and operated with our dedicated farmhouse service. Whether it’s a routine check-up, grooming, or emergency care, our goal is to make sure every tail wags, every purr resonates, and every visit feels safe and comfortable.
+                </p>
+                <a href="appointment.html" class="button"><b>BOOK AN APPOINTMENT</b></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="aboutus">
+        <div class="aboutus-container">
+            <div class="aboutus-text">
+                <h2 class="fadeline">ABOUT US</h2>
+                <p class="slideup">
+                    At Petflix & Heal Veterinary Clinic, we provide compassionate, professional care for all pets. Our team of experienced veterinarians and staff is committed to ensuring your pet’s health and happiness. From wellness exams to specialized treatments, every pet is treated like family.
+                </p>
+                <a href="about.html" class="buttonabout"><b>VIEW MORE</b></a>
+            </div>
+            <div class="aboutus-image">
+            <img src="images/aboutus.jpg" alt="About">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="servicespreview">
+        <div class="services-content">
+            <h2>OUR SERVICES</h2>
+            <p>
+                We offer comprehensive services for large and small animals, with a focus on preventative care such as annual wellness exams, vaccinations, nutritional counseling, and parasite prevention.
+            </p>
+            <a href="services.html" class="buttonservices"><b>VIEW ALL SERVICES</b></a>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews">
+        <div class="reviews-container">
+            <div class="review-image">
+                <img src="images/pic4.jpg" alt="Happy Pet">
+            </div>
+            <div class="reviews-content">
+                <h2>PAWSITIVE REVIEWS</h2>
+                <div class="stars">★★★★★</div>
+                <div class="slider">
+                    <div class="reviewstrack" id="reviewsTrack">
+                        <div class="review">“Amazing care and very friendly staff. Highly recommend!”</div>
+                        <div class="review">“They treated my pet like family. Exceptional service.”</div>
+                        <div class="review">“Professional, kind, and very attentive vets.”</div>
+                    </div>
+                </div>
+                <div class="reviewarrows">
+                    <button class="arrow" onclick="prevReview()">&#10094;</button>
+                    <button class="arrow" onclick="nextReview()">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / FAQ -->
+    <section class="contactpreview">
+        <h2>COME VISIT US TODAY</h2>
+        <p>2 Second Circular Road, Cantonments Accra, Greater Accra Region, Ghana</p>
+        <p>GL059-9755</p><br /><br />
+        <p><b><span class="highlight">Phone:</span></b> +233 50 722 5454</p><br /><br />
+        <p>
+            <b><span class="highlight">Monday - Friday:</span></b> 7:30am - 5:00pm<br />
+            <b><span class="highlight">Saturday:</span></b> 8:00am - 2:00pm <br />
+            <b><span class="highlight">Sunday:</span></b> Closed<br /><br />
+            <a href="faq.html" class="buttonservices"><b>FAQ</b></a>
+        </p>
+    </section>
+
+    <footer>
+        <p><b>&copy; 2025 Petflix & Heal Veterinary Clinic. All rights reserved.</b></p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

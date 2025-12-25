@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background: url("images/question.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #D8A7B1;
+
+
+    header {
+        background-color: #7A1F3D;
+        padding: 25px;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 5px 0 0 0;
+    }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 4px;
+            vertical-align: middle;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #6EB5FF;
+                font-weight: 600;
+                padding: 6px 12px;
+                border-radius: 20px;
+                transition: all 0.3s ease;
+                font-size: 16px;
+            }
+
+                nav ul li a:hover {
+                    background-color: #D8A7B1;
+                    color: #1D3C6A;
+                }
+    /* FAQ Page Heading */
+    .faq-heading {
+        text-align: center;
+        margin: 60px 20px 40px 20px;
+        opacity: 1;
+        transform: translateY(30px);
+        transition: all 1s ease;
+    }
+
+        .faq-heading h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 48px; /* Large heading like your "Serving Community" */
+            color: #6EB5FF; /* Turquoise */
+        }
+        /* Animation on scroll */
+        .faq-heading.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    /* FAQ Slider Section */
+    .faq-slider {
+        position: relative;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center; /* horizontal centering */
+        align-items: center; /* vertical centering */
+        overflow: hidden;
+    }
+
+    .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out;
+    }
+
+        .slide.active {
+            opacity: 1;
+            z-index: 1;
+        }
+    /* Overlay for text */
+    .faq-overlay {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        right: 50px;
+        background-color: rgba(122, 31, 61, 0.85); /* Burgundy semi-transparent */
+        padding: 40px;
+        border-radius: 15px;
+        color: #D8A7B1; /* Turquoise */
+    }
+
+        .faq-overlay h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 39px;
+            margin-bottom: 20px;
+            color: #6EB5FF;
+        }
+
+        .faq-overlay p {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+    /* Slider Buttons */
+    .faq-slider .prev,
+    .faq-slider .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(122,31,61,0.8);
+        color: #6EB5FF;
+        font-size: 30px;
+        border: none;
+        border-radius: 50%;
+        padding: 10px 16px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .faq-slider .prev {
+        left: 20px;
+    }
+
+    .faq-slider .next {
+        right: 20px;
+    }
+
+        .faq-slider .prev:hover,
+        .faq-slider .next:hover {
+            background-color: rgba(122,31,61,1);
+        }
+    /* Reveal Animation */
+    .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 1s ease;
+    }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+        .faq-overlay h2 {
+            font-size: 39px;
+        }
+
+        .faq-overlay p {
+            font-size: 18px;
+        }
+    }
+
+
+    footer {
+        background-color: #D8A7B1;
+        color: #7A1F3D;
+        text-align: center;
+        padding: 15px;
+        font-size: 14px;
+    }
+}

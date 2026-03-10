@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Playfair Display', serif;
     background: url("images/question.jpg") no-repeat center center fixed;
+    background-color: #D8A7B1;
     background-size: cover;
     color: #D8A7B1;
 
